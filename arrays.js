@@ -194,7 +194,13 @@ Exercise 15:
   - Hint: Be sure to declare and initialize the total variable before the iterations.
 */
 
-let total;
+
+let total = 0;
+
+const save = numArrays.flat();
+save.forEach(function(num){
+    total += num;
+})
 
 
 
