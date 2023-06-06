@@ -107,8 +107,6 @@ if(foods.includes('soup')){
     hasSoup = false;
 }
 
-
-
 console.log('Exercise 10 Result:\n', hasSoup);
 
 /*
@@ -117,10 +115,14 @@ Exercise 11:
   - Hint: Initialize the odds variable to an empty array before the iteration.
 */
 
+const odds = []; 
 const nums = [100, 5, 23, 15, 21, 72, 9, 45, 66, 7, 81, 90];
-
-// Complete Exercise 11 below...
-
+nums.forEach(function(num){
+    if(num % 2 === 1){
+        odds.push(num);
+    }
+    
+})
 
 
 console.log('Exercise 11 Result:\n', odds);
@@ -134,7 +136,20 @@ Exercise 12:
 */
 
 // Complete Exercise 12 below...
+const fizzbuzz = [];
+const fizz = [];
+const buzz = [];
 
+nums.forEach(function(num){
+    if(num % 3 === 0 && num % 5 === 0 ){
+        fizzbuzz.push(num);   
+    }else if(num % 3 === 0){
+        fizz.push(num);
+    }else if(num % 5 === 0){
+        buzz.push(num);
+    }
+
+})
 
 
 console.log('Exercise 12 Results:');
@@ -156,7 +171,7 @@ const numArrays = [
 ];
 
 // Complete Exercise 13 below...
-
+let numList = numArrays[numArrays.length-1];
 
 
 console.log('Exercise 13 Result:\n', numList);
@@ -167,8 +182,9 @@ Exercise 14:
 */
 
 // Complete Exercise 14 below...
+let num = numArrays[2][1];
 
-
+//let num = numArrays[finder];
 
 console.log('Exercise 14 Result:\n', num);
 
@@ -178,7 +194,8 @@ Exercise 15:
   - Hint: Be sure to declare and initialize the total variable before the iterations.
 */
 
-// Complete Exercise 15 below...
+let total;
+
 
 
 
